@@ -11,14 +11,16 @@
 <!-- GitHub Trophies: -->
 ![Trophy](https://github-profile-trophy.vercel.app/?username=CVKim&theme=algolia&column=8&margin-w=5&margin-h=5)
 
-<!-- Top Languages: -->
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=CVKim&layout=compact&theme=tokyonight&hide_border=true)](https://github.com/CVKim)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=CVKim&theme=tokyonight&card_width=400&hide_border=true)](https://github.com/CVKim)
 
 <br>
 
 ## 💻 DEV's log 💻
-<!-- 비워-두고 나중에 채워 넣을 영역 -->
-<!-- ---------------------------------------------------------- -->
+<div style="display:flex; flex-direction:row;">
+  <a href="https://mvmldl.tistory.com/">
+    <img src="https://img.shields.io/badge/Tistory-000000?style=for-the-badge&logo=Tistory&logoColor=white">
+  </a>
+</div><br>
 
 <br>
 
