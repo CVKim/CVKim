@@ -15,28 +15,28 @@
 
 <br>
 
-## 💻 DEV's log 💻
+## 💻 DEV's log
 <div style="display:flex; flex-direction:row;">
   <a href="https://mvmldl.tistory.com/">
     <img src="https://img.shields.io/badge/Tistory-000000?style=for-the-badge&logo=Tistory&logoColor=white">
   </a>
-</div><br>
-
-<br>
-
-## 📞 Contact 📞
-<div style="display:flex; flex-direction:row; gap:6px;">
-  <a href="https://linkedin.com/in/광열-김-73a08b271">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white">
-  </a>
-  <a href="mailto:kgy2521@gmail.com">
-    <img src="https://img.shields.io/badge/kgy2521@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white">
-  </a>
 </div>
 
-<br>
+## 🛠 Tools
+<div style="display:flex; flex-direction:row; flex-wrap:wrap; gap:6px;">
 
-## 🔨 Once I've used 🔨
+<!-- IDE / Editor -->
+<img src="https://img.shields.io/badge/Visual%20Studio-5C2D91?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="Visual Studio">
+<img src="https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=for-the-badge&logo=Visual%20Studio%20Code&logoColor=white" alt="VS Code">
+<img src="https://img.shields.io/badge/PyCharm-31A8FF?style=for-the-badge&logo=pycharm&logoColor=black" alt="PyCharm">
+<img src="https://img.shields.io/badge/Android%20Studio-3DDC84?style=for-the-badge&logo=Android%20Studio&logoColor=white" alt="Android Studio">
+
+<!-- Version Control -->
+<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+<img src="https://img.shields.io/badge/Subversion-809CC9?style=for-the-badge&logo=subversion&logoColor=white" alt="SVN">
+</div>
+
+## 🔨 Once I've used
 <div style="display:flex; flex-direction:row; flex-wrap:wrap; gap:6px;">
 
   <!-- Programming & Scripting -->
@@ -67,7 +67,18 @@
 
 </div>
 
+## 📞 Contact
+<div style="display:flex; flex-direction:row; gap:6px;">
+  <!-- LinkedIn -->
+  <a href="https://linkedin.com/in/광열-김-73a08b271" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+  </a>
 
+  <!-- Gmail -->
+  <a href="mailto:kgy2521@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail">
+  </a>
+</div>
 
 <br>
 </div>
