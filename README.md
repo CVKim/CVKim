@@ -2,19 +2,7 @@
 
 <!-- 헤더 배너 -->
 ![header](https://capsule-render.vercel.app/api?type=waving&color=timeGradient&text=Welcome%20to%20Gwangyeol's%20GitHub%20👋&animation=twinkling&fontSize=35&fontAlignY=40&fontAlign=70&height=250)
-
 ---
-
-<!-- 깃허브 바로가기 이모지 -->
-[🐙 Gwangyeol GitHub](https://github.com/CVKim)
-
-<!-- GitHub Trophies: -->
-![Trophy](https://github-profile-trophy.vercel.app/?username=CVKim&theme=algolia&column=8&margin-w=5&margin-h=5)
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=CVKim&theme=tokyonight&card_width=400&hide_border=true)](https://github.com/CVKim)
-
-<br>
-
 ## 💻 DEV's log
 <div style="display:flex; flex-direction:row;">
   <a href="https://mvmldl.tistory.com/">
