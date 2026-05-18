@@ -1,71 +1,75 @@
 <div align="left">
 
 <!-- Professional header -->
-![header](https://capsule-render.vercel.app/api?type=slice&color=0:1e3a8a,100:0c4a6e&text=Gwangyeol%20Kim&fontSize=46&fontColor=ffffff&height=200&desc=Deep%20Learning%20Deployment%20Engineer&descSize=18&descAlign=70&descAlignY=80)
+![header](https://capsule-render.vercel.app/api?type=slice&color=0:1e3a8a,100:0c4a6e&text=Gwangyeol%20Kim&fontSize=46&fontColor=ffffff&height=200&desc=Machine%20Vision%20%26%20AI%20Solution%20Developer&descSize=18&descAlign=70&descAlignY=80)
 
 </div>
 
 ## Profile
 
-**Industrial Machine Vision Engineer** · Deep Learning Deployment · **7+ years**
+**Machine Vision & AI Solution Developer** · **7+ years**
 
-제조 / 물류 도메인에서 비전 시스템과 Deep Learning inference 파이프라인을 설계 / 최적화합니다. 학습 (PyTorch) → 변환 (ONNX) → 배포 (TensorRT / ONNX Runtime / OpenVINO) → C++ runtime 까지 전 stage 를 다루며, **저수준 cubin / runtime header 단계의 최적화** 와 **2D / 3D 비전 알고리즘** 양쪽을 함께 수행합니다.
+> 현장의 난제를 Deep-dive 엔지니어링으로 해결하는 풀스택 자동화 · 비전 AI 전문가
+
+머신비전 시스템 설계부터 딥러닝 모델 (Detection / Segmentation / Anomaly Detection / OCR / Generative AI) 의 학습 · 최적화 · 배포까지 **End-to-End 파이프라인**을 다룹니다. **C++ / Python 기반 고성능 추론 엔진** (TensorRT / OpenVINO / ONNX Runtime / CUDA / Flash Attention / SIMD) 과 **3D Vision 알고리즘** (Epipolar Geometry, Depth Processing, Point Cloud) 양쪽을 production-grade 로 구현해 왔습니다.
 
 ---
 
-## Experience
+## Domain Experience
 
-### Manufacturing Domains
-다양한 제조 / 물류 현장에서 비전 시스템 양산 경험:
+다양한 제조 / 물류 양산 현장에서 적용한 비전 AI · 자동화 솔루션:
 
-| 도메인 | 검사 / 작업 대상 |
+| 산업 도메인 | 적용 기술 · 주요 성과 |
 |---|---|
-| Semiconductor | Wafer 검사, OLB / PCB inspection |
-| Display | Panel / module 검사 |
-| Bio / Medical | 진단키트 자동화 검사 |
-| Automotive | 부품 검사, Bin-picking |
-| Logistics | Palletizing, 박스 인식 |
-| Coating / Surface | 외관 / 표면 결함 검사 |
+| **자동차 부품 검사** (도장 라인, 볼조인트, 외관) | Edge AI (Jetson Orin) 기반 로봇 충돌 방지 Vision Safety Agent · 2-Stage Detection + Classification 앙상블로 **미검률 0.1% 미만** · Diffusion 기반 결함 데이터 합성 양산 적용 |
+| **타이어 3D 외관 + 양각/음각 OCR** | 곡면 특성 보정 (Patch-based Median, SVD Polynomial Fitting), PCA Alignment + Statistical Depth Analysis · Rotation-Aware Custom PARSeq + Top-K 후보 매칭 · C++ Native End-to-End OCR 파이프라인 |
+| **물류 자동화** (Palletizer / Depalletizer / Rack 가이드) | YOLOv8-OBB Custom Cutout 기반 박스 검출률 **+5%** · 2D Intensity + 3D ToF Depth 융합 위치 보정 · **Eye-to-Hand Auto Calibration** (Reprojection 검증, XY ±10mm · Z ±5mm 정밀도) |
+| **반도체 자동화 설비** (Wafer / Cut / Align) | Asymmetric Geometric Align 알고리즘 신규 개발 · Priority-based Async I/O + Lock-Free Circular Queue 로 Deterministic Real-time 제어 · WPF/MVVM UI 표준화 |
+| **디스플레이 검사 설비** (OLB / PCB / Bonding / Cutting) | CXP 고속 카메라 전환으로 Tact Time **4× 향상** · AI VAT (Vision Auto Teaching) + Rule-based 앙상블로 자재성 오검률 **99% 개선** · DCT / Median Custom Filter 로 **Cpk 1.33+** 달성 |
+| **바이오 / 진단키트 자동화** | 사내 최초 **GPU 가속 자체 Vision AI Inference Framework** (CUDA / TensorRT / ONNX Runtime) 양산 적용 · Multi-spectrum 광학 시스템 · Robot-Vision Guiding |
 
-### Deep Learning Models
+---
 
-산업 현장에 맞춰 학습 / 최적화 / 배포해온 모델 카테고리:
+## Core Competencies
 
-| 카테고리 | 대표 모델 / 기법 |
-|---|---|
-| **Object Detection** | RF-DETR, D-FINE, DETR family · YOLO 시리즈 (v5 / v7 / v8 / v11) |
-| **Classification** | ResNet / EfficientNet / ViT 계열 |
-| **Segmentation** | U-Net 계열, instance / semantic segmentation |
-| **Anomaly Detection** | Reconstruction-based, embedding-based, PatchCore-like 접근 |
-| **Defect Generation** | Diffusion / GAN 기반 결함 합성 (학습 데이터 부족 도메인 대응) |
-| **Multi-Object Tracking** | ByteTrack, DeepSORT (제조 라인 이동 객체 추적) |
+### Deep Learning Tasks
+- **Object Detection** — YOLO 시리즈 (v7 / v8 / v11, HBB / OBB), RTMDet, RF-DETR, D-FINE · Head 구조 변경, OBB fine-tuning, Custom Cutout 학습 전략
+- **Segmentation** — SAM2 Decoder **U-Net 기반 경량화** 및 Few-shot 적응, DeepLabv3+, Auto-labeling 파이프라인 구축
+- **Anomaly Detection** — DINOv2 기반 비지도 학습 fine-tuning, PaDiM / PatchCore, Foundation Model 활용
+- **OCR** — Scene Text Recognition (PARSeq Rotation-Aware 재설계, SVTR, PaddleOCR), End-to-End OBB → Perspective Rectify → Orientation Cls → Recognize 파이프라인 C++ Native 구현
+- **Generative AI** — Stable Diffusion 기반 **Defect Image Synthesis** (소수 샘플로 희귀 결함 합성), Custom Loss Function 설계 · 양산 적용
+- **Multi-Object Tracking** — ByteTrack, DeepSORT · Severe Occlusion 환경의 Component-based Tracking, Temporal Difference Classification 으로 Move/Stay 판단 정밀화
 
-### Inference / Deployment Stack
-학습 / 변환 → 배포 / 최적화 전 사이클:
+### Inference Engine & Optimization
+- **TensorRT** — Custom Plugin 개발 (**Flash Attention 3**, A10), Dynamic Shape, Multi-stream batching, Cross-platform engine 최적화 (Linux build → Windows AMD64), Patch / Batch inference 가속
+- **OpenVINO** — GPU 미사용 현장의 CPU 실시간 추론 파이프라인, ONNX 변환 + Runtime 최적화
+- **CUDA Custom Kernel** — Flash Attention native C++ 구현, multi-thread inference context
+- **ONNX Toolchain** — `onnx-graphsurgeon`, `polygraphy` graph surgery, FP16 / FP32 precision pinning, layerPrecisions / layerOutputTypes 미세 제어
+- **C++ Concurrency** — Singleton + Context 공유 (Multi-thread safe), Priority-based Async I/O, Lock-Free Circular Queue
 
-| 단계 | Tooling |
-|---|---|
-| **Training** | PyTorch, LibTorch, TensorFlow |
-| **Conversion** | ONNX, ONNX-graphsurgeon, polygraphy |
-| **Optimization** | **TensorRT** (custom plugin: A10, Flash Attention 변종), ONNX Runtime, **OpenVINO** |
-| **Targets** | NVIDIA GPU (server / desktop / Jetson), Edge PC (CPU SIMD), x86 / ARM |
-| **Runtime** | C++ inference app, multi-stream batching, GPU memory profiling |
-| **Cross-platform** | Linux build → Windows AMD64 runtime engine 최적화 |
-
-### 2D / 3D Vision Algorithms
-
-Deep Learning 외 전통 vision 알고리즘 능력:
-
-- **2D Metrology / 외관 검사**: 룰베이스 알고리즘 설계, 광학적 한계 / 객체 특성 수학적 모델링 (SVD, Polynomial fitting), C++ / Python 전·후처리 구현
-- **3D Robot Vision**: Bin-picking, Palletizing 양산 솔루션. RGB / ToF / Stereo 입력, motion calibration (hand-eye, eye-hand)
-- **Vision Libraries**: Cognex VisionPro, Matrox MIL, OpenCV, PCL, Eigen
+### 3D Vision & Computational Geometry
+- **3D Reconstruction** — Epipolar Geometry, Multi-view stereo, Point Cloud Processing (PCL)
+- **Mathematical Modeling** — SVD, PCA, Polynomial Fitting, Cubic Spline Interpolation, Dynamic Programming (Cost Map 기반 최적 경로 탐색)
+- **Sensor Fusion** — 2D Intensity + 3D Depth (ToF) 융합, Cell-grid Median 기반 Statistical Depth Analysis
+- **Robot-Vision Calibration** — Eye-to-Hand / Hand-Eye **Auto Calibration**, Inverse Kinematics 기반 Extrinsic 산출, Reprojection Error 정량 검증
+- **Sub-pixel Precision** — Cognex VisionPro / MIL / OpenCV 기반 Sub-pixel Edge / Blob Detection, 적응형 필터링
 
 ### Industrial System Integration
+- **Industrial Cameras** — GigE Vision / USB3 Vision / CoaXPress / Camera Link · Area / Line / ToF (Arena, Basler pylon, HIK MVS, Matrox MIL, Sapera, GO_SDK)
+- **PLC & Control** — Mitsubishi / LS Electric / Siemens 통신 표준화, Auto Optical System (AF / WB / 조명 자동 보정)
+- **Edge Deployment** — NVIDIA Jetson Orin 기반 low-latency inference + PLC 신호 연동 시스템
 
-- **Camera SDKs**: Arena (Lucid), Basler pylon, HIK MVS, Matrox MIL, Sapera (Teledyne DALSA), GO_SDK (Gocator 3D)
-- **Vision interfaces**: GigE Vision, USB3 Vision, Camera Link, Area / Line / ToF 카메라
-- **PLC / Control**: Mitsubishi, LS Electric, Siemens
-- **Auto optical system**: 광학 셋팅 표준화 / 자동화 도구 개발
+---
+
+## Research & Patents
+
+| Type | Description |
+|---|---|
+| 📄 **Paper (arXiv)** | [arXiv:2411.16767](https://arxiv.org/pdf/2411.16767) — Diffusion-based Defect Generation for Industrial Inspection |
+| 🇰🇷 Patent (KR) | 도메인이 상이한 복수의 손실함수를 활용한 이미지 복원 방법 — No. 10-2910338 |
+| 🇰🇷 Patent (KR) | 복수의 손실 함수를 활용한 결함 데이터 획득 방법 — No. 10-2924934 |
+| 🇺🇸 Patent (US) | App. No. 19/362,423 (2025.10) — pending |
+| 🇪🇺 Patent (EU) | App. No. EP25210652.1 (2025.10) — pending |
 
 ---
 
@@ -108,9 +112,10 @@ Deep Learning 외 전통 vision 알고리즘 능력:
 
 ### Industrial / Edge
 <p>
+<img src="https://img.shields.io/badge/NVIDIA%20Jetson%20Orin-76B900?style=for-the-badge&logo=nvidia&logoColor=white">
 <img src="https://img.shields.io/badge/Edge%20PC-555?style=for-the-badge">
-<img src="https://img.shields.io/badge/NVIDIA%20Jetson-76B900?style=for-the-badge&logo=nvidia&logoColor=white">
 <img src="https://img.shields.io/badge/Industrial%20Cameras-555?style=for-the-badge">
+<img src="https://img.shields.io/badge/CoaXPress%20%2F%20Camera%20Link-444?style=for-the-badge">
 <img src="https://img.shields.io/badge/PLC%20Mitsubishi-CC0000?style=for-the-badge">
 <img src="https://img.shields.io/badge/PLC%20LS%20Electric-005BAC?style=for-the-badge">
 <img src="https://img.shields.io/badge/PLC%20Siemens-009999?style=for-the-badge&logo=siemens&logoColor=white">
@@ -125,6 +130,7 @@ Deep Learning 외 전통 vision 알고리즘 능력:
 <img src="https://img.shields.io/badge/Subversion-809CC9?style=for-the-badge&logo=subversion&logoColor=white">
 <img src="https://img.shields.io/badge/Visual%20Studio-5C2D91?style=for-the-badge&logo=visualstudio&logoColor=white">
 <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=Visual%20Studio%20Code&logoColor=white">
+<img src="https://img.shields.io/badge/JetBrains%20DotMemory-000000?style=for-the-badge&logo=jetbrains&logoColor=white">
 </p>
 
 ### Data & Persistence
@@ -133,6 +139,7 @@ Deep Learning 외 전통 vision 알고리즘 능력:
 <img src="https://img.shields.io/badge/YAML-CB171E?style=for-the-badge&logo=yaml&logoColor=white">
 <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
 <img src="https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white">
+<img src="https://img.shields.io/badge/DBeaver-372923?style=for-the-badge&logo=dbeaver&logoColor=white">
 </p>
 
 ---
@@ -165,4 +172,7 @@ Deep Learning 외 전통 vision 알고리즘 능력:
 </a>
 <a href="https://mvmldl.tistory.com/">
   <img src="https://img.shields.io/badge/Tech%20Blog-000000?style=for-the-badge&logo=Tistory&logoColor=white">
+</a>
+<a href="https://arxiv.org/pdf/2411.16767">
+  <img src="https://img.shields.io/badge/arXiv%202411.16767-B31B1B?style=for-the-badge&logo=arxiv&logoColor=white">
 </a>
