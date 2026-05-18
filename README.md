@@ -1,38 +1,31 @@
 <div align="left">
 
-<!-- 헤더 배너 -->
-![header](https://capsule-render.vercel.app/api?type=waving&color=timeGradient&text=Welcome%20to%20Gwangyeol's%20GitHub%20👋&animation=twinkling&fontSize=35&fontAlignY=40&fontAlign=70&height=250)
+<!-- Professional header -->
+![header](https://capsule-render.vercel.app/api?type=slice&color=0:1e3a8a,100:0c4a6e&text=Gwangyeol%20Kim&fontSize=46&fontColor=ffffff&height=200&desc=Deep%20Learning%20Deployment%20Engineer&descSize=18&descAlign=70&descAlignY=80)
 
-### Hey there 👋
+</div>
 
-Industrial Machine Vision 쪽에서 Deep Learning deployment 를 합니다 — **PyTorch → ONNX → TensorRT** 파이프라인, cross-platform engine 최적화, 그리고 C++ inference runtime 까지. 매트릭스 돌려서 trtexec 옵션들이 실제로 뭘 하는지 / 어떤 cubin 이 어디서 발생하는지 파보는 걸 좋아합니다.
+## Profile
 
-```yaml
-focus:
-  - "Cross-platform TensorRT engine optimization (Linux build → Windows runtime)"
-  - "Transformer detection models (RF-DETR, D-FINE) + classic CNN (YOLO 시리즈)"
-  - "C++/Python production inference runtime"
-  - "Industrial camera SDK integration"
+Deep Learning Deployment Engineer specializing in **industrial machine vision**.
 
-currently_tinkering:
-  - "TRT 10.x flash attention fusion patterns"
-  - "FP16 fallback cubin packing analysis"
-  - "Engine loading time profiling (deserialize vs context creation)"
-
-reading: "Whatever NVIDIA quietly drops in NGC release notes 🐢"
-```
+Production-grade inference pipelines built on **PyTorch → ONNX → TensorRT**, with deep focus on cross-platform engine optimization (Linux build → Windows runtime), low-level cubin / runtime header analysis, and C++ inference application development for factory automation environments.
 
 ---
 
-## 💻 DEV's log
+## Areas of Specialization
 
-<a href="https://mvmldl.tistory.com/">
-  <img src="https://img.shields.io/badge/Tistory-000000?style=for-the-badge&logo=Tistory&logoColor=white">
-</a>
+| Domain | Scope |
+|---|---|
+| **TensorRT Engineering** | Cross-platform engine builds, Flash Attention fusion analysis, FP16 / FP32 precision matrix, version-compatible runtime header optimization, multi-SM cubin packing diagnostics |
+| **Model Optimization** | ONNX graph surgery (polygraphy, onnx-graphsurgeon), builder tactic source selection, layer-wise precision pinning, accuracy guard strategies |
+| **Detection Models** | Transformer-based (RF-DETR, D-FINE, DETR family) and CNN-based (YOLO series) deployment to GPU inference targets |
+| **Production Runtime** | C++ inference applications, LibTorch integration, multi-stream batching, IExecutionContext lifecycle, GPU memory profiling |
+| **Industrial Vision** | GigE Vision / USB3 Vision camera SDK integration, real-time inspection pipelines, multi-camera synchronization |
 
 ---
 
-## 🧰 Stack
+## Technical Stack
 
 ### Languages
 <p>
@@ -44,18 +37,18 @@ reading: "Whatever NVIDIA quietly drops in NGC release notes 🐢"
 <img src="https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white">
 </p>
 
-### Deep Learning / GPU
+### Deep Learning & GPU
 <p>
 <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white">
+<img src="https://img.shields.io/badge/LibTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white">
 <img src="https://img.shields.io/badge/ONNX-005CED?style=for-the-badge&logo=onnx&logoColor=white">
 <img src="https://img.shields.io/badge/TensorRT-76B900?style=for-the-badge&logo=nvidia&logoColor=white">
 <img src="https://img.shields.io/badge/CUDA-76B900?style=for-the-badge&logo=nvidia&logoColor=white">
 <img src="https://img.shields.io/badge/cuDNN-76B900?style=for-the-badge&logo=nvidia&logoColor=white">
 <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white">
-<img src="https://img.shields.io/badge/LibTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white">
 </p>
 
-### Computer Vision / Industrial
+### Computer Vision & Industrial
 <p>
 <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white">
 <img src="https://img.shields.io/badge/PCL-22A699?style=for-the-badge&logoColor=white">
@@ -63,10 +56,10 @@ reading: "Whatever NVIDIA quietly drops in NGC release notes 🐢"
 <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white">
 <img src="https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge&logo=matplotlib&logoColor=white">
 <img src="https://img.shields.io/badge/SIMD-4EAA25?style=for-the-badge&logoColor=white">
-<img src="https://img.shields.io/badge/Camera%20SDKs-Arena%20%7C%20Basler%20%7C%20HIK%20%7C%20Matrox-555?style=for-the-badge">
+<img src="https://img.shields.io/badge/Industrial%20Camera%20SDKs-555?style=for-the-badge">
 </p>
 
-### DevOps & Tooling
+### DevOps & Build
 <p>
 <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white">
 <img src="https://img.shields.io/badge/WSL2-4D4D4D?style=for-the-badge&logo=linux&logoColor=white">
@@ -75,34 +68,37 @@ reading: "Whatever NVIDIA quietly drops in NGC release notes 🐢"
 <img src="https://img.shields.io/badge/Subversion-809CC9?style=for-the-badge&logo=subversion&logoColor=white">
 <img src="https://img.shields.io/badge/Visual%20Studio-5C2D91?style=for-the-badge&logo=visualstudio&logoColor=white">
 <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=Visual%20Studio%20Code&logoColor=white">
-<img src="https://img.shields.io/badge/PyCharm-31A8FF?style=for-the-badge&logo=pycharm&logoColor=black">
 </p>
 
-### Data Formats / DB
+### Data & Persistence
 <p>
 <img src="https://img.shields.io/badge/JSON-5E5C5C?style=for-the-badge&logo=json&logoColor=white">
 <img src="https://img.shields.io/badge/YAML-CB171E?style=for-the-badge&logo=yaml&logoColor=white">
-<img src="https://img.shields.io/badge/INI-0078D4?style=for-the-badge&logoColor=white">
 <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
 <img src="https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white">
 </p>
 
 ---
 
-## 📊 GitHub Stats
+## GitHub Activity
 
 <p align="center">
-  <img alt="stats" src="https://github-readme-stats.vercel.app/api?username=CVKim&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true" height="160" />
-  <img alt="streak" src="https://github-readme-streak-stats.herokuapp.com/?user=CVKim&theme=tokyonight&hide_border=true" height="160" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=CVKim&theme=github_dark" alt="profile" />
 </p>
 
 <p align="center">
-  <img alt="languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=CVKim&layout=compact&theme=tokyonight&hide_border=true&langs_count=10" height="160" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=CVKim&theme=github_dark" alt="languages" height="180" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=CVKim&theme=github_dark" alt="commits per language" height="180" />
+</p>
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=CVKim&theme=github_dark" alt="stats" height="180" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=CVKim&theme=github_dark&utcOffset=9" alt="productive time" height="180" />
 </p>
 
 ---
 
-## 📞 Contact
+## Contact
 
 <a href="https://linkedin.com/in/광열-김-73a08b271" target="_blank">
   <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white">
@@ -111,11 +107,5 @@ reading: "Whatever NVIDIA quietly drops in NGC release notes 🐢"
   <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white">
 </a>
 <a href="https://mvmldl.tistory.com/">
-  <img src="https://img.shields.io/badge/Blog-000000?style=for-the-badge&logo=Tistory&logoColor=white">
+  <img src="https://img.shields.io/badge/Tech%20Blog-000000?style=for-the-badge&logo=Tistory&logoColor=white">
 </a>
-
-<br>
-
-<sub>"Optimization is what you discover by reading the build log line by line." 🔍</sub>
-
-</div>
