@@ -3,7 +3,7 @@
 
 ## Profile
 
-**Machine Vision & AI Solution Developer · 7+ years**
+**Machine Vision & AI Solution Developer · Feb 2019 – Present**
 
 머신비전 시스템 설계, 딥러닝 모델 학습 · 최적화 · 배포 파이프라인을 다룹니다. C++ / Python 기반 production 추론 엔진과 2D · 3D vision 알고리즘을 함께 구현합니다.
 
@@ -18,7 +18,7 @@
 
 ## Industries
 
-자동차 부품 · 타이어 · 물류 (Palletizer / Rack) · 반도체 · 디스플레이 · 바이오 / 진단키트
+Automotive Parts · Tire · Logistics (Palletizer / Rack) · Semiconductor · Display · Bio / Diagnostic Kit
 
 ## Research
 
@@ -87,3 +87,7 @@
 <a href="mailto:kgy2521@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=flat-square&logo=gmail&logoColor=white"></a>
 <a href="https://mvmldl.tistory.com/"><img src="https://img.shields.io/badge/Tech%20Blog-000000?style=flat-square&logo=Tistory&logoColor=white"></a>
 <a href="https://arxiv.org/pdf/2411.16767"><img src="https://img.shields.io/badge/arXiv%202411.16767-B31B1B?style=flat-square&logo=arxiv&logoColor=white"></a>
+
+---
+
+<sub>© 2026 Gwangyeol Kim · Last updated May 19, 2026</sub>
