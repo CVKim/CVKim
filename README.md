@@ -7,45 +7,65 @@
 
 ## Profile
 
-**Industrial Machine Vision Engineer** focused on Deep Learning deployment and 2D/3D vision algorithms.
+**Industrial Machine Vision Engineer** · Deep Learning Deployment · **7+ years**
 
-7+ years of experience spanning automated inspection systems (반도체 / 디스플레이 / 바이오 / 자동차 / 물류) and modern deep learning inference pipelines for manufacturing. Core strength is **production-grade TensorRT engine optimization** — from ONNX graph surgery to cubin-level analysis and C++ runtime integration.
-
-#### Specialty
-- **TensorRT engineering** — Cross-platform engine builds (Linux → Windows AMD64), Flash Attention fusion, FP16 / FP32 precision engineering, version-compatible runtime header optimization
-- **Custom plugin development** — A10 custom plugin, attention variants, ONNX → TRT conversion path tuning
-- **2D / 3D vision algorithms** — Metrology, defect detection / generation (Diffusion 기반), rule-based design with math modeling (SVD, Polynomial fitting)
-- **3D Robot Vision** — Bin-picking, palletizing, multi-sensor calibration (hand-eye / eye-hand)
-- **Real-time MOT** — ByteTrack, DeepSORT for manufacturing line tracking
+제조 / 물류 도메인에서 비전 시스템과 Deep Learning inference 파이프라인을 설계 / 최적화합니다. 학습 (PyTorch) → 변환 (ONNX) → 배포 (TensorRT / ONNX Runtime / OpenVINO) → C++ runtime 까지 전 stage 를 다루며, **저수준 cubin / runtime header 단계의 최적화** 와 **2D / 3D 비전 알고리즘** 양쪽을 함께 수행합니다.
 
 ---
 
-## Career
+## Experience
 
-### (주)AIVEX (아이벡스) · 딥러닝연구실 / 책임연구원
-<sub>2022.06 ~ 현재 · `개발` `AI / Vision` `PM`</sub>
+### Manufacturing Domains
+다양한 제조 / 물류 현장에서 비전 시스템 양산 경험:
 
-> AI 비전 솔루션 개발 및 3D / Deep Learning 알고리즘 최적화
+| 도메인 | 검사 / 작업 대상 |
+|---|---|
+| Semiconductor | Wafer 검사, OLB / PCB inspection |
+| Display | Panel / module 검사 |
+| Bio / Medical | 진단키트 자동화 검사 |
+| Automotive | 부품 검사, Bin-picking |
+| Logistics | Palletizing, 박스 인식 |
+| Coating / Surface | 외관 / 표면 결함 검사 |
 
-- **Deep Learning Algorithm Dev** — 제조 / 물류 현장에 특화된 Detection, Segmentation, Anomaly Detection 모델 개발 및 **Defect Generation (Diffusion)** 생성형 모델 연구.
-- **Vision Algorithm Design (2D / 3D)** — 2D / 3D Vision 기술을 활용한 **계측 (Metrology)** 및 비정형 외관 불량 검출을 위한 **강건한 룰베이스 (Rule-based) 알고리즘** 설계 및 구현.
-  - 광학적 한계 또는 특정 객체 특성을 고려하여 raw data 를 수학적으로 모델링 (SVD, Polynomial fitting 등) → C++ / Python code 로 전·후처리 알고리즘 구현
-- **Inference Framework Optimization** — CPU / GPU 컴퓨팅 환경에서 **SIMD 병렬 연산, TensorRT, CUDA, ONNX Runtime** 을 활용한 고성능 산업용 비전 AI 프레임워크 설계 및 최적화.
-  - A10 custom plugin, Flash Attention, ONNX → TRT optimization
-- **3D Robot Vision Solution** — 자동차 / 물류 산업용 빈피킹 (Bin-picking) 및 적재 (Palletizing) 를 위한 3D 로봇 비전 솔루션 개발 및 양산화.
-  - RGB / ToF / Robot stereo 및 motion calibration (hand-eye, eye-hand type)
-- **Real-time MOT Research** — 제조 라인 내 이동 물체 추적을 위한 **Multi-Object Tracking (ByteTrack, DeepSORT)** 솔루션 선행 연구 및 개발.
+### Deep Learning Models
 
-### (주)JASTECH (제이스텍) · 비전기술팀 / 주임
-<sub>2019.02 ~ 2022.05 · `개발` `Machine Vision`</sub>
+산업 현장에 맞춰 학습 / 최적화 / 배포해온 모델 카테고리:
 
-> 디스플레이 / 반도체 / 바이오 검사 장비 비전 시스템 풀스택 개발
+| 카테고리 | 대표 모델 / 기법 |
+|---|---|
+| **Object Detection** | RF-DETR, D-FINE, DETR family · YOLO 시리즈 (v5 / v7 / v8 / v11) |
+| **Classification** | ResNet / EfficientNet / ViT 계열 |
+| **Segmentation** | U-Net 계열, instance / semantic segmentation |
+| **Anomaly Detection** | Reconstruction-based, embedding-based, PatchCore-like 접근 |
+| **Defect Generation** | Diffusion / GAN 기반 결함 합성 (학습 데이터 부족 도메인 대응) |
+| **Multi-Object Tracking** | ByteTrack, DeepSORT (제조 라인 이동 객체 추적) |
 
-- **Vision System Full-stack Dev** — 반도체 (Wafer), 디스플레이 (OLB / PCB), 바이오 (진단키트) 자동화 설비의 비전 소프트웨어 설계 및 제어 시스템 구축.
-- **Hardware Interface Integration** — 다양한 산업용 카메라 (Area / Line / ToF), 조명 컨트롤러, **PLC (Mitsubishi / LS / Siemens)** 통신 인터페이스 직접 개발 및 표준화.
-  - Auto optical system 개발로 인해 user 가 광학 셋팅을 용이하게 / 표준화되게 셋팅 가능한 프로그램 개발
-- **Algorithm & Optimization** — **Cognex VisionPro, MIL, OpenCV** 를 활용한 룰베이스 알고리즘 개발 및 **Deep Learning (Classification / Detection)** 모델 현장 최적화.
-- **Project Management** — 프로젝트 PM 으로서 고객사 요구사항 분석, 광학계 (Optics) 선정 및 PoC 검토, 현장 셋업.
+### Inference / Deployment Stack
+학습 / 변환 → 배포 / 최적화 전 사이클:
+
+| 단계 | Tooling |
+|---|---|
+| **Training** | PyTorch, LibTorch, TensorFlow |
+| **Conversion** | ONNX, ONNX-graphsurgeon, polygraphy |
+| **Optimization** | **TensorRT** (custom plugin: A10, Flash Attention 변종), ONNX Runtime, **OpenVINO** |
+| **Targets** | NVIDIA GPU (server / desktop / Jetson), Edge PC (CPU SIMD), x86 / ARM |
+| **Runtime** | C++ inference app, multi-stream batching, GPU memory profiling |
+| **Cross-platform** | Linux build → Windows AMD64 runtime engine 최적화 |
+
+### 2D / 3D Vision Algorithms
+
+Deep Learning 외 전통 vision 알고리즘 능력:
+
+- **2D Metrology / 외관 검사**: 룰베이스 알고리즘 설계, 광학적 한계 / 객체 특성 수학적 모델링 (SVD, Polynomial fitting), C++ / Python 전·후처리 구현
+- **3D Robot Vision**: Bin-picking, Palletizing 양산 솔루션. RGB / ToF / Stereo 입력, motion calibration (hand-eye, eye-hand)
+- **Vision Libraries**: Cognex VisionPro, Matrox MIL, OpenCV, PCL, Eigen
+
+### Industrial System Integration
+
+- **Camera SDKs**: Arena (Lucid), Basler pylon, HIK MVS, Matrox MIL, Sapera (Teledyne DALSA), GO_SDK (Gocator 3D)
+- **Vision interfaces**: GigE Vision, USB3 Vision, Camera Link, Area / Line / ToF 카메라
+- **PLC / Control**: Mitsubishi, LS Electric, Siemens
+- **Auto optical system**: 광학 셋팅 표준화 / 자동화 도구 개발
 
 ---
 
@@ -68,12 +88,13 @@
 <img src="https://img.shields.io/badge/ONNX-005CED?style=for-the-badge&logo=onnx&logoColor=white">
 <img src="https://img.shields.io/badge/ONNX%20Runtime-005CED?style=for-the-badge&logo=onnx&logoColor=white">
 <img src="https://img.shields.io/badge/TensorRT-76B900?style=for-the-badge&logo=nvidia&logoColor=white">
+<img src="https://img.shields.io/badge/OpenVINO-0071C5?style=for-the-badge&logo=intel&logoColor=white">
 <img src="https://img.shields.io/badge/CUDA-76B900?style=for-the-badge&logo=nvidia&logoColor=white">
 <img src="https://img.shields.io/badge/cuDNN-76B900?style=for-the-badge&logo=nvidia&logoColor=white">
 <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white">
 </p>
 
-### Computer Vision & Industrial
+### Computer Vision
 <p>
 <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white">
 <img src="https://img.shields.io/badge/PCL-22A699?style=for-the-badge&logoColor=white">
@@ -83,11 +104,13 @@
 <img src="https://img.shields.io/badge/SIMD-4EAA25?style=for-the-badge&logoColor=white">
 <img src="https://img.shields.io/badge/Cognex%20VisionPro-1E90FF?style=for-the-badge">
 <img src="https://img.shields.io/badge/Matrox%20MIL-FF8C00?style=for-the-badge">
-<img src="https://img.shields.io/badge/Industrial%20Cameras-555?style=for-the-badge">
 </p>
 
-### Industrial Control
+### Industrial / Edge
 <p>
+<img src="https://img.shields.io/badge/Edge%20PC-555?style=for-the-badge">
+<img src="https://img.shields.io/badge/NVIDIA%20Jetson-76B900?style=for-the-badge&logo=nvidia&logoColor=white">
+<img src="https://img.shields.io/badge/Industrial%20Cameras-555?style=for-the-badge">
 <img src="https://img.shields.io/badge/PLC%20Mitsubishi-CC0000?style=for-the-badge">
 <img src="https://img.shields.io/badge/PLC%20LS%20Electric-005BAC?style=for-the-badge">
 <img src="https://img.shields.io/badge/PLC%20Siemens-009999?style=for-the-badge&logo=siemens&logoColor=white">
