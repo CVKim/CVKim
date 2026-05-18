@@ -1,9 +1,5 @@
-<div align="left">
-
-<!-- Professional header -->
-![header](https://capsule-render.vercel.app/api?type=slice&color=0:1e3a8a,100:0c4a6e&text=Gwangyeol%20Kim&fontSize=46&fontColor=ffffff&height=200&desc=Machine%20Vision%20%26%20AI%20Solution%20Developer&descSize=18&descAlign=70&descAlignY=80)
-
-</div>
+<!-- Header banner — waving + timeGradient (most reliable capsule-render config) -->
+![header](https://capsule-render.vercel.app/api?type=waving&color=timeGradient&text=Gwangyeol%20Kim&animation=fadeIn&fontSize=50&fontAlignY=42&height=220)
 
 ## Profile
 
@@ -158,6 +154,10 @@
 <p align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=CVKim&theme=github_dark" alt="stats" height="180" />
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=CVKim&theme=github_dark&utcOffset=9" alt="productive time" height="180" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=CVKim&theme=tokyonight&hide_border=true" alt="streak" />
 </p>
 
 ---
